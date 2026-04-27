@@ -2,6 +2,7 @@ import { Outlet, createFileRoute } from "@tanstack/react-router";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { WhatsAppFloat } from "@/components/WhatsAppFloat";
+import { AppToaster } from "@/components/AppToaster";
 
 export const Route = createFileRoute("/_site")({
   component: SiteLayout,
@@ -16,6 +17,7 @@ function SiteLayout() {
       </main>
       <Footer />
       <WhatsAppFloat />
+      <AppToaster />
     </div>
   );
 }
