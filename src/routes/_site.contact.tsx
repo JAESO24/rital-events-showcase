@@ -23,9 +23,9 @@ export const Route = createFileRoute("/_site/contact")({
 
 const INFO = [
   { icon: Mail, label: "Email", value: "contact@ritalevents.fr" },
-  { icon: Phone, label: "Téléphone", value: "+33 6 00 00 00 00" },
-  { icon: MapPin, label: "Zone d'intervention", value: "France entière" },
-  { icon: Clock, label: "Horaires", value: "Lun — Sam, 9h — 19h" },
+  { icon: Phone, label: "Téléphone", value: "+225 0779937563" },
+  { icon: MapPin, label: "Zone d'intervention", value: "Cocody Riviera Palmeraie" },
+  { icon: Clock, label: "Horaires", value: "Lundi au Samedi, 8h — 18h" },
 ];
 
 function ContactPage() {

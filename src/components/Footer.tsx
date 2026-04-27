@@ -49,11 +49,11 @@ export function Footer() {
               </li>
               <li className="flex items-start gap-2">
                 <Phone className="h-4 w-4 mt-0.5 text-accent-glow shrink-0" />
-                <span>+33 6 00 00 00 00</span>
+                <span>+225 0779937563</span>
               </li>
               <li className="flex items-start gap-2">
                 <MapPin className="h-4 w-4 mt-0.5 text-accent-glow shrink-0" />
-                <span>France</span>
+                <span>Cocody Riviera Palmeraie</span>
               </li>
             </ul>
           </div>
@@ -62,7 +62,7 @@ export function Footer() {
             <h3 className="font-display text-lg mb-4">Suivez-nous</h3>
             <div className="flex gap-3">
               <a
-                href="#"
+                href="https://www.facebook.com/people/Rital-Events/100064047724671/"
                 aria-label="Facebook"
                 className="h-10 w-10 rounded-full bg-white/10 hover:bg-accent hover:scale-110 flex items-center justify-center transition-spring"
               >

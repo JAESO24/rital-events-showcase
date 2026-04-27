@@ -1,6 +1,6 @@
 import { MessageCircle } from "lucide-react";
 
-const PHONE = "33600000000"; // sans le +
+const PHONE = "2250779937563"; // sans le +
 const MESSAGE = encodeURIComponent("Bonjour Rital Events, je souhaite obtenir plus d'informations.");
 
 export function WhatsAppFloat() {
