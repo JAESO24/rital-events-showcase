@@ -121,7 +121,7 @@ function HomePage() {
           <SectionTitle
             light
             eyebrow="Pourquoi Rital Events"
-            title={<>L'art de l'événement, <em className="text-accent-glow not-italic">à la française</em></>}
+            title={<>L'art de l'événement, <em className="text-accent-glow not-italic">à l'ivoirienne</em></>}
             description="Quatre piliers qui font la différence sur chacun de nos projets."
           />
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">

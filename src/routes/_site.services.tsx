@@ -1,6 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Button } from "@/components/ui/button";
-import { SectionTitle } from "@/components/SectionTitle";
 import { ServicesGrid } from "@/components/ServicesGrid";
 import { ArrowRight } from "lucide-react";
 
@@ -11,13 +10,13 @@ export const Route = createFileRoute("/_site/services")({
       {
         name: "description",
         content:
-          "Découvrez tous les services de Rital Events : événementiel, traiteur, location de camion, logistique et organisation complète d'événements.",
+          "Découvrez tous les services de Rital Events : organisation d'événements, wedding planner, chaises et housses, traiteur, location de vaisselles, matériel événementiel, bâches, camion, décoration d'intérieur et vente de fleurs.",
       },
       { property: "og:title", content: "Nos services — Rital Events" },
       {
         property: "og:description",
         content:
-          "Événementiel, traiteur, logistique : une offre complète pour orchestrer vos événements.",
+          "Wedding planner, traiteur, décoration, fleurs, location de matériel : une offre complète pour orchestrer vos plus beaux événements.",
       },
     ],
   }),

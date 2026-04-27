@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { motion } from "framer-motion";
-import { Heart, Star, Users, Lightbulb, ArrowRight } from "lucide-react";
+import { Heart, Star, Users, Lightbulb, ArrowRight, MapPin, Trophy, CalendarCheck, Smile } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export const Route = createFileRoute("/_site/a-propos")({
@@ -10,7 +10,7 @@ export const Route = createFileRoute("/_site/a-propos")({
       {
         name: "description",
         content:
-          "Rital Events, votre partenaire événementiel : notre histoire, nos valeurs et notre passion pour orchestrer vos plus beaux moments.",
+          "Rital Events, entreprise événementielle ivoirienne fondée par Mme POKOU Rita. Plus de 500 prestations réalisées en Côte d'Ivoire : mariages, galas, décoration, traiteur et bien plus.",
       },
       { property: "og:title", content: "À propos — Rital Events" },
       {
@@ -29,6 +29,13 @@ const VALUES = [
   { icon: Lightbulb, title: "Créativité", text: "Des idées originales pour des événements qui marquent les esprits." },
 ];
 
+const STATS = [
+  { icon: Trophy, value: "+500", label: "Prestations réalisées" },
+  { icon: CalendarCheck, value: "+8", label: "Années d'expérience" },
+  { icon: Smile, value: "98%", label: "Clients satisfaits" },
+  { icon: MapPin, value: "CI", label: "Fièrement ivoirien" },
+];
+
 function AboutPage() {
   return (
     <>
@@ -43,6 +50,34 @@ function AboutPage() {
         </div>
       </section>
 
+      {/* STATS */}
+      <section className="bg-gradient-brand/5 border-b border-border/40">
+        <div className="container mx-auto px-4 md:px-8 py-12">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
+            {STATS.map((stat, idx) => {
+              const Icon = stat.icon;
+              return (
+                <motion.div
+                  key={stat.label}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: idx * 0.1 }}
+                  className="flex flex-col items-center text-center p-6 rounded-2xl bg-card shadow-card"
+                >
+                  <div className="h-11 w-11 rounded-xl bg-gradient-accent flex items-center justify-center mb-3 shadow-glow">
+                    <Icon className="h-5 w-5 text-white" />
+                  </div>
+                  <span className="font-display text-4xl text-primary font-bold">{stat.value}</span>
+                  <span className="text-sm text-muted-foreground mt-1">{stat.label}</span>
+                </motion.div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* QUI SOMMES-NOUS */}
       <section className="container mx-auto px-4 md:px-8 py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
           <motion.div
@@ -59,14 +94,21 @@ function AboutPage() {
             </h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                Depuis notre création, Rital Events accompagne ses clients dans la conception
-                et l'organisation d'événements sur-mesure. Du mariage intimiste au gala
+                Fondée par <span className="text-primary font-semibold">Mme POKOU Rita</span>,
+                Rital Events est une entreprise ivoirienne spécialisée dans l'organisation et
+                la coordination d'événements sur-mesure. Basée à <span className="text-primary font-semibold">Cocody Rivera Palmeraie, Abidjan</span>,
+                elle rayonne sur toute la Côte d'Ivoire et au-delà.
+              </p>
+              <p>
+                Avec <span className="text-primary font-semibold">plus de 500 prestations réalisées</span>,
+                Rital Events s'est imposée comme une référence incontournable pour les mariages,
+                galas, séminaires et célébrations privées. Du mariage intimiste au grand gala
                 d'entreprise, nous mettons notre savoir-faire au service de vos rêves.
               </p>
               <p>
                 Notre force ? Une équipe pluridisciplinaire qui maîtrise chaque maillon de
-                la chaîne événementielle : créativité, traiteur, logistique, location et
-                coordination. Un seul interlocuteur, une exécution irréprochable.
+                la chaîne événementielle : créativité, traiteur, décoration florale, logistique,
+                location et coordination. Un seul interlocuteur, une exécution irréprochable.
               </p>
               <p>
                 Nous croyons qu'un événement réussi est un événement où chaque détail
@@ -95,7 +137,13 @@ function AboutPage() {
                   <p className="font-display text-2xl text-white leading-relaxed mb-4">
                     Faire d'un instant<br />un souvenir éternel.
                   </p>
-                  <p className="text-white/70 text-sm uppercase tracking-widest">L'équipe Rital Events</p>
+                  <div className="mt-6 border-t border-white/20 pt-5">
+                    <p className="text-white font-semibold tracking-wide">Mme POKOU Rita</p>
+                    <p className="text-white/70 text-sm uppercase tracking-widest mt-1">Fondatrice & Directrice</p>
+                    <p className="text-white/60 text-xs mt-1 flex items-center justify-center gap-1">
+                      <MapPin className="h-3 w-3" /> Côte d'Ivoire
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
