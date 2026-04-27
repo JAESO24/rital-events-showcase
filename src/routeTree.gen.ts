@@ -9,50 +9,183 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as IndexRouteImport } from './routes/index'
+import { Route as SiteRouteImport } from './routes/_site'
+import { Route as SiteIndexRouteImport } from './routes/_site.index'
+import { Route as ApiContactRouteImport } from './routes/api/contact'
+import { Route as SiteServicesRouteImport } from './routes/_site.services'
+import { Route as SiteRealisationsRouteImport } from './routes/_site.realisations'
+import { Route as SiteContactRouteImport } from './routes/_site.contact'
+import { Route as SiteAProposRouteImport } from './routes/_site.a-propos'
 
-const IndexRoute = IndexRouteImport.update({
+const SiteRoute = SiteRouteImport.update({
+  id: '/_site',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SiteIndexRoute = SiteIndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => SiteRoute,
+} as any)
+const ApiContactRoute = ApiContactRouteImport.update({
+  id: '/api/contact',
+  path: '/api/contact',
   getParentRoute: () => rootRouteImport,
+} as any)
+const SiteServicesRoute = SiteServicesRouteImport.update({
+  id: '/services',
+  path: '/services',
+  getParentRoute: () => SiteRoute,
+} as any)
+const SiteRealisationsRoute = SiteRealisationsRouteImport.update({
+  id: '/realisations',
+  path: '/realisations',
+  getParentRoute: () => SiteRoute,
+} as any)
+const SiteContactRoute = SiteContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => SiteRoute,
+} as any)
+const SiteAProposRoute = SiteAProposRouteImport.update({
+  id: '/a-propos',
+  path: '/a-propos',
+  getParentRoute: () => SiteRoute,
 } as any)
 
 export interface FileRoutesByFullPath {
-  '/': typeof IndexRoute
+  '/': typeof SiteIndexRoute
+  '/a-propos': typeof SiteAProposRoute
+  '/contact': typeof SiteContactRoute
+  '/realisations': typeof SiteRealisationsRoute
+  '/services': typeof SiteServicesRoute
+  '/api/contact': typeof ApiContactRoute
 }
 export interface FileRoutesByTo {
-  '/': typeof IndexRoute
+  '/a-propos': typeof SiteAProposRoute
+  '/contact': typeof SiteContactRoute
+  '/realisations': typeof SiteRealisationsRoute
+  '/services': typeof SiteServicesRoute
+  '/api/contact': typeof ApiContactRoute
+  '/': typeof SiteIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
-  '/': typeof IndexRoute
+  '/_site': typeof SiteRouteWithChildren
+  '/_site/a-propos': typeof SiteAProposRoute
+  '/_site/contact': typeof SiteContactRoute
+  '/_site/realisations': typeof SiteRealisationsRoute
+  '/_site/services': typeof SiteServicesRoute
+  '/api/contact': typeof ApiContactRoute
+  '/_site/': typeof SiteIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/a-propos'
+    | '/contact'
+    | '/realisations'
+    | '/services'
+    | '/api/contact'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/a-propos'
+    | '/contact'
+    | '/realisations'
+    | '/services'
+    | '/api/contact'
+    | '/'
+  id:
+    | '__root__'
+    | '/_site'
+    | '/_site/a-propos'
+    | '/_site/contact'
+    | '/_site/realisations'
+    | '/_site/services'
+    | '/api/contact'
+    | '/_site/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
-  IndexRoute: typeof IndexRoute
+  SiteRoute: typeof SiteRouteWithChildren
+  ApiContactRoute: typeof ApiContactRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/': {
-      id: '/'
+    '/_site': {
+      id: '/_site'
+      path: ''
+      fullPath: '/'
+      preLoaderRoute: typeof SiteRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/_site/': {
+      id: '/_site/'
       path: '/'
       fullPath: '/'
-      preLoaderRoute: typeof IndexRouteImport
+      preLoaderRoute: typeof SiteIndexRouteImport
+      parentRoute: typeof SiteRoute
+    }
+    '/api/contact': {
+      id: '/api/contact'
+      path: '/api/contact'
+      fullPath: '/api/contact'
+      preLoaderRoute: typeof ApiContactRouteImport
       parentRoute: typeof rootRouteImport
+    }
+    '/_site/services': {
+      id: '/_site/services'
+      path: '/services'
+      fullPath: '/services'
+      preLoaderRoute: typeof SiteServicesRouteImport
+      parentRoute: typeof SiteRoute
+    }
+    '/_site/realisations': {
+      id: '/_site/realisations'
+      path: '/realisations'
+      fullPath: '/realisations'
+      preLoaderRoute: typeof SiteRealisationsRouteImport
+      parentRoute: typeof SiteRoute
+    }
+    '/_site/contact': {
+      id: '/_site/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof SiteContactRouteImport
+      parentRoute: typeof SiteRoute
+    }
+    '/_site/a-propos': {
+      id: '/_site/a-propos'
+      path: '/a-propos'
+      fullPath: '/a-propos'
+      preLoaderRoute: typeof SiteAProposRouteImport
+      parentRoute: typeof SiteRoute
     }
   }
 }
 
+interface SiteRouteChildren {
+  SiteAProposRoute: typeof SiteAProposRoute
+  SiteContactRoute: typeof SiteContactRoute
+  SiteRealisationsRoute: typeof SiteRealisationsRoute
+  SiteServicesRoute: typeof SiteServicesRoute
+  SiteIndexRoute: typeof SiteIndexRoute
+}
+
+const SiteRouteChildren: SiteRouteChildren = {
+  SiteAProposRoute: SiteAProposRoute,
+  SiteContactRoute: SiteContactRoute,
+  SiteRealisationsRoute: SiteRealisationsRoute,
+  SiteServicesRoute: SiteServicesRoute,
+  SiteIndexRoute: SiteIndexRoute,
+}
+
+const SiteRouteWithChildren = SiteRoute._addFileChildren(SiteRouteChildren)
+
 const rootRouteChildren: RootRouteChildren = {
-  IndexRoute: IndexRoute,
+  SiteRoute: SiteRouteWithChildren,
+  ApiContactRoute: ApiContactRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
