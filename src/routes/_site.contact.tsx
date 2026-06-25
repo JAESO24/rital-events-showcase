@@ -22,7 +22,7 @@ export const Route = createFileRoute("/_site/contact")({
 });
 
 const INFO = [
-  { icon: Mail, label: "Email", value: "contact@ritalevents.fr" },
+  { icon: Mail, label: "Email", value: "ritapokou12@gmail.com" },
   { icon: Phone, label: "Téléphone", value: "+225 0779937563" },
   { icon: MapPin, label: "Zone d'intervention", value: "Cocody Riviera Palmeraie" },
   { icon: Clock, label: "Horaires", value: "Lundi au Samedi, 8h — 18h" },

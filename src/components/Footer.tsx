@@ -45,7 +45,7 @@ export function Footer() {
             <ul className="space-y-3 text-sm text-primary-foreground/80">
               <li className="flex items-start gap-2">
                 <Mail className="h-4 w-4 mt-0.5 text-accent-glow shrink-0" />
-                <span>contact@ritalevents.fr</span>
+                <span>ritapokou12@gmail.com</span>
               </li>
               <li className="flex items-start gap-2">
                 <Phone className="h-4 w-4 mt-0.5 text-accent-glow shrink-0" />
