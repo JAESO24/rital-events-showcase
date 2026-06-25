@@ -24,7 +24,7 @@ export const Route = createFileRoute("/_site/contact")({
 const INFO = [
   { icon: Mail, label: "Email", value: "ritapokou12@gmail.com" },
   { icon: Phone, label: "Téléphone", value: "+225 0779937563" },
-  { icon: MapPin, label: "Zone d'intervention", value: "Cocody Riviera Palmeraie" },
+  { icon: MapPin, label: "Adresse", value: "834 Avenue Albert Kakou Tiapani, Abidjan — Yango : Rue I165, 111" },
   { icon: Clock, label: "Horaires", value: "Lundi au Samedi, 8h — 18h" },
 ];
 
@@ -76,6 +76,25 @@ function ContactPage() {
           {/* Form side */}
           <div className="lg:col-span-3">
             <ContactForm />
+          </div>
+        </div>
+
+        {/* Map */}
+        <div className="max-w-6xl mx-auto mt-12">
+          <h2 className="font-display text-2xl md:text-3xl text-primary mb-6">
+            Nous trouver
+          </h2>
+          <div className="rounded-2xl overflow-hidden shadow-elegant border border-border/50 h-80 md:h-96">
+            <iframe
+              title="Localisation Rital Events"
+              src="https://maps.google.com/maps?q=834+Avenue+Albert+Kakou+Tiapani+Abidjan&output=embed&z=16"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
           </div>
         </div>
       </section>
