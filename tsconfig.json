@@ -1,27 +1,46 @@
 {
-  "include": ["src/**/*.ts", "src/**/*.tsx", "vite.config.ts", "eslint.config.js"],
+  "include": [
+    "src/main.tsx",
+    "src/router.tsx",
+    "src/routeTree.gen.ts",
+    "src/routes/*.tsx",
+    "src/data/**/*.ts",
+    "src/data/**/*.json",
+    "src/components/Experience.tsx",
+    "src/components/Header.tsx",
+    "src/components/Footer.tsx",
+    "src/components/Logo.tsx",
+    "src/components/WhatsAppFloat.tsx",
+    "vite.config.ts",
+    "src/components/PremiumCatalogue.tsx",
+    "src/components/PremiumContact.tsx",
+    "src/components/PageMotion.tsx"
+  ],
   "compilerOptions": {
     "target": "ES2022",
     "jsx": "react-jsx",
     "module": "ESNext",
-    "lib": ["ES2022", "DOM", "DOM.Iterable"],
-    "types": ["vite/client"],
-
-    /* Bundler mode */
+    "lib": [
+      "ES2022",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "types": [
+      "vite/client"
+    ],
     "moduleResolution": "Bundler",
     "allowImportingTsExtensions": true,
     "verbatimModuleSyntax": false,
     "noEmit": true,
-
-    /* Linting */
     "skipLibCheck": true,
     "strict": true,
-    "noUnusedLocals": false,
-    "noUnusedParameters": false,
+    "resolveJsonModule": true,
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true,
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": [
+        "./src/*"
+      ]
     }
   }
 }

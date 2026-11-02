@@ -1,120 +1,71 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Link, useLocation } from "@tanstack/react-router";
-import { Menu, X } from "lucide-react";
+import { ArrowUpRight, Menu, X } from "lucide-react";
 import { Logo } from "./Logo";
-import { Button } from "./ui/button";
-import { motion, AnimatePresence } from "framer-motion";
-
-const NAV_LINKS = [
-  { to: "/", label: "Accueil" },
-  { to: "/services", label: "Services" },
-  { to: "/realisations", label: "Réalisations" },
-  { to: "/a-propos", label: "À propos" },
-  { to: "/contact", label: "Contact" },
+import { useSelection, selectedLines } from "./Experience";
+const links = [
+  ["/", "Accueil"],
+  ["/services", "Prestations"],
+  ["/catalogue", "Catalogue"],
+  ["/realisations", "Inspirations"],
+  ["/a-propos", "À propos"],
 ] as const;
-
 export function Header() {
   const [open, setOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
-
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 20);
-    onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
-
+  const { basket } = useSelection();
+  const count = selectedLines(basket).length;
   useEffect(() => {
     setOpen(false);
   }, [location.pathname]);
-
+  useEffect(() => {
+    if (!open) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setOpen(false);
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [open]);
   return (
-    <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-smooth ${
-        scrolled
-          ? "bg-background/85 backdrop-blur-lg border-b border-border shadow-soft"
-          : "bg-transparent"
-      }`}
-    >
-      <div className="container mx-auto flex items-center justify-between px-4 md:px-8 py-3">
-        <Logo size="md" />
-
-        <nav className="hidden lg:flex items-center gap-1">
-          {NAV_LINKS.map((link) => (
-            <Link
-              key={link.to}
-              to={link.to}
-              className="relative px-4 py-2 text-sm font-medium text-foreground/80 hover:text-primary transition-smooth"
-              activeProps={{
-                className: "text-primary",
-              }}
-              activeOptions={{ exact: link.to === "/" }}
-            >
-              {({ isActive }) => (
-                <>
-                  {link.label}
-                  {isActive && (
-                    <motion.span
-                      layoutId="active-nav"
-                      className="absolute left-3 right-3 -bottom-0.5 h-0.5 bg-gradient-accent rounded-full"
-                      transition={{ type: "spring", stiffness: 380, damping: 30 }}
-                    />
-                  )}
-                </>
-              )}
-            </Link>
-          ))}
-        </nav>
-
-        <div className="flex items-center gap-3">
-          <Button
-            asChild
-            variant="hero"
-            size="sm"
-            className="hidden md:inline-flex"
-          >
-            <Link to="/contact">Demander un devis</Link>
-          </Button>
-
+    <>
+      <a href="#main-content" className="skip-link">
+        Aller au contenu
+      </a>
+      <header className="site-header">
+        <div className="wrap header-inner">
+          <Logo />
+          <nav className="desktop-nav" aria-label="Navigation principale">
+            {links.map(([to, label]) => (
+              <Link key={to} to={to} activeOptions={{ exact: true }}>
+                {label}
+                {to === "/catalogue" && count > 0 ? ` (${count})` : ""}
+              </Link>
+            ))}
+          </nav>
+          <Link className="button header-cta" to="/contact">
+            Demander un devis <ArrowUpRight size={16} />
+          </Link>
           <button
-            onClick={() => setOpen(!open)}
-            className="lg:hidden p-2 rounded-md text-primary hover:bg-secondary transition-smooth"
-            aria-label="Menu"
+            className="menu-toggle"
+            onClick={() => setOpen((v) => !v)}
+            aria-label={open ? "Fermer le menu" : "Ouvrir le menu"}
+            aria-expanded={open}
+            aria-controls="mobile-menu"
           >
-            {open ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            {open ? <X /> : <Menu />}
           </button>
         </div>
-      </div>
-
-      <AnimatePresence>
         {open && (
-          <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: "auto" }}
-            exit={{ opacity: 0, height: 0 }}
-            transition={{ duration: 0.3 }}
-            className="lg:hidden bg-background/95 backdrop-blur-lg border-t border-border overflow-hidden"
-          >
-            <nav className="container mx-auto px-4 py-4 flex flex-col gap-1">
-              {NAV_LINKS.map((link) => (
-                <Link
-                  key={link.to}
-                  to={link.to}
-                  className="px-4 py-3 text-base font-medium text-foreground hover:bg-secondary hover:text-primary rounded-lg transition-smooth"
-                  activeProps={{ className: "text-primary bg-secondary" }}
-                  activeOptions={{ exact: link.to === "/" }}
-                >
-                  {link.label}
-                </Link>
-              ))}
-              <Button asChild variant="hero" className="mt-3 w-full">
-                <Link to="/contact">Demander un devis</Link>
-              </Button>
-            </nav>
-          </motion.div>
+          <nav id="mobile-menu" className="mobile-nav" aria-label="Navigation mobile">
+            {links.map(([to, label]) => (
+              <Link key={to} to={to} activeOptions={{ exact: true }}>
+                {label}
+              </Link>
+            ))}
+            <Link to="/contact">Contact</Link>
+          </nav>
         )}
-      </AnimatePresence>
-    </header>
+      </header>
+    </>
   );
 }

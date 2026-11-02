@@ -1,0 +1,14 @@
+{
+  "passed": 8,
+  "checks": [
+    "Espacement correct dans le titre du téléchargement",
+    "Une sélection entièrement sur devis n’est pas présentée comme gratuite",
+    "Message de devis sans faux prix nul",
+    "Erreur visible et nouvelle tentative possible",
+    "Enregistrement partiel sans fausse confirmation de réception e-mail",
+    "Même identifiant pour la nouvelle tentative, protection contre le double envoi",
+    "Absence de configuration affichée clairement",
+    "Les réglages du serveur ne sont pas inclus dans le JavaScript livré au navigateur"
+  ],
+  "real_messages_sent": 0
+}

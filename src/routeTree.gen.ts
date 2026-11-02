@@ -11,11 +11,11 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as SiteRouteImport } from './routes/_site'
 import { Route as SiteIndexRouteImport } from './routes/_site.index'
-import { Route as ApiContactRouteImport } from './routes/api/contact'
-import { Route as SiteServicesRouteImport } from './routes/_site.services'
-import { Route as SiteRealisationsRouteImport } from './routes/_site.realisations'
-import { Route as SiteContactRouteImport } from './routes/_site.contact'
 import { Route as SiteAProposRouteImport } from './routes/_site.a-propos'
+import { Route as SiteCatalogueRouteImport } from './routes/_site.catalogue'
+import { Route as SiteContactRouteImport } from './routes/_site.contact'
+import { Route as SiteRealisationsRouteImport } from './routes/_site.realisations'
+import { Route as SiteServicesRouteImport } from './routes/_site.services'
 
 const SiteRoute = SiteRouteImport.update({
   id: '/_site',
@@ -26,19 +26,14 @@ const SiteIndexRoute = SiteIndexRouteImport.update({
   path: '/',
   getParentRoute: () => SiteRoute,
 } as any)
-const ApiContactRoute = ApiContactRouteImport.update({
-  id: '/api/contact',
-  path: '/api/contact',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const SiteServicesRoute = SiteServicesRouteImport.update({
-  id: '/services',
-  path: '/services',
+const SiteAProposRoute = SiteAProposRouteImport.update({
+  id: '/a-propos',
+  path: '/a-propos',
   getParentRoute: () => SiteRoute,
 } as any)
-const SiteRealisationsRoute = SiteRealisationsRouteImport.update({
-  id: '/realisations',
-  path: '/realisations',
+const SiteCatalogueRoute = SiteCatalogueRouteImport.update({
+  id: '/catalogue',
+  path: '/catalogue',
   getParentRoute: () => SiteRoute,
 } as any)
 const SiteContactRoute = SiteContactRouteImport.update({
@@ -46,36 +41,41 @@ const SiteContactRoute = SiteContactRouteImport.update({
   path: '/contact',
   getParentRoute: () => SiteRoute,
 } as any)
-const SiteAProposRoute = SiteAProposRouteImport.update({
-  id: '/a-propos',
-  path: '/a-propos',
+const SiteRealisationsRoute = SiteRealisationsRouteImport.update({
+  id: '/realisations',
+  path: '/realisations',
+  getParentRoute: () => SiteRoute,
+} as any)
+const SiteServicesRoute = SiteServicesRouteImport.update({
+  id: '/services',
+  path: '/services',
   getParentRoute: () => SiteRoute,
 } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof SiteIndexRoute
   '/a-propos': typeof SiteAProposRoute
+  '/catalogue': typeof SiteCatalogueRoute
   '/contact': typeof SiteContactRoute
   '/realisations': typeof SiteRealisationsRoute
   '/services': typeof SiteServicesRoute
-  '/api/contact': typeof ApiContactRoute
 }
 export interface FileRoutesByTo {
   '/a-propos': typeof SiteAProposRoute
+  '/catalogue': typeof SiteCatalogueRoute
   '/contact': typeof SiteContactRoute
   '/realisations': typeof SiteRealisationsRoute
   '/services': typeof SiteServicesRoute
-  '/api/contact': typeof ApiContactRoute
   '/': typeof SiteIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/_site': typeof SiteRouteWithChildren
   '/_site/a-propos': typeof SiteAProposRoute
+  '/_site/catalogue': typeof SiteCatalogueRoute
   '/_site/contact': typeof SiteContactRoute
   '/_site/realisations': typeof SiteRealisationsRoute
   '/_site/services': typeof SiteServicesRoute
-  '/api/contact': typeof ApiContactRoute
   '/_site/': typeof SiteIndexRoute
 }
 export interface FileRouteTypes {
@@ -83,32 +83,31 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/a-propos'
+    | '/catalogue'
     | '/contact'
     | '/realisations'
     | '/services'
-    | '/api/contact'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/a-propos'
+    | '/catalogue'
     | '/contact'
     | '/realisations'
     | '/services'
-    | '/api/contact'
     | '/'
   id:
     | '__root__'
     | '/_site'
     | '/_site/a-propos'
+    | '/_site/catalogue'
     | '/_site/contact'
     | '/_site/realisations'
     | '/_site/services'
-    | '/api/contact'
     | '/_site/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   SiteRoute: typeof SiteRouteWithChildren
-  ApiContactRoute: typeof ApiContactRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -127,25 +126,18 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof SiteIndexRouteImport
       parentRoute: typeof SiteRoute
     }
-    '/api/contact': {
-      id: '/api/contact'
-      path: '/api/contact'
-      fullPath: '/api/contact'
-      preLoaderRoute: typeof ApiContactRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/_site/services': {
-      id: '/_site/services'
-      path: '/services'
-      fullPath: '/services'
-      preLoaderRoute: typeof SiteServicesRouteImport
+    '/_site/a-propos': {
+      id: '/_site/a-propos'
+      path: '/a-propos'
+      fullPath: '/a-propos'
+      preLoaderRoute: typeof SiteAProposRouteImport
       parentRoute: typeof SiteRoute
     }
-    '/_site/realisations': {
-      id: '/_site/realisations'
-      path: '/realisations'
-      fullPath: '/realisations'
-      preLoaderRoute: typeof SiteRealisationsRouteImport
+    '/_site/catalogue': {
+      id: '/_site/catalogue'
+      path: '/catalogue'
+      fullPath: '/catalogue'
+      preLoaderRoute: typeof SiteCatalogueRouteImport
       parentRoute: typeof SiteRoute
     }
     '/_site/contact': {
@@ -155,11 +147,18 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof SiteContactRouteImport
       parentRoute: typeof SiteRoute
     }
-    '/_site/a-propos': {
-      id: '/_site/a-propos'
-      path: '/a-propos'
-      fullPath: '/a-propos'
-      preLoaderRoute: typeof SiteAProposRouteImport
+    '/_site/realisations': {
+      id: '/_site/realisations'
+      path: '/realisations'
+      fullPath: '/realisations'
+      preLoaderRoute: typeof SiteRealisationsRouteImport
+      parentRoute: typeof SiteRoute
+    }
+    '/_site/services': {
+      id: '/_site/services'
+      path: '/services'
+      fullPath: '/services'
+      preLoaderRoute: typeof SiteServicesRouteImport
       parentRoute: typeof SiteRoute
     }
   }
@@ -167,6 +166,7 @@ declare module '@tanstack/react-router' {
 
 interface SiteRouteChildren {
   SiteAProposRoute: typeof SiteAProposRoute
+  SiteCatalogueRoute: typeof SiteCatalogueRoute
   SiteContactRoute: typeof SiteContactRoute
   SiteRealisationsRoute: typeof SiteRealisationsRoute
   SiteServicesRoute: typeof SiteServicesRoute
@@ -175,6 +175,7 @@ interface SiteRouteChildren {
 
 const SiteRouteChildren: SiteRouteChildren = {
   SiteAProposRoute: SiteAProposRoute,
+  SiteCatalogueRoute: SiteCatalogueRoute,
   SiteContactRoute: SiteContactRoute,
   SiteRealisationsRoute: SiteRealisationsRoute,
   SiteServicesRoute: SiteServicesRoute,
@@ -185,7 +186,6 @@ const SiteRouteWithChildren = SiteRoute._addFileChildren(SiteRouteChildren)
 
 const rootRouteChildren: RootRouteChildren = {
   SiteRoute: SiteRouteWithChildren,
-  ApiContactRoute: ApiContactRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

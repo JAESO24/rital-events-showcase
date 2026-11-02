@@ -1,0 +1,1150 @@
+[
+  {
+    "id": 1,
+    "reference": "RE-001",
+    "title": "Chapiteau au m²",
+    "category": "Structures & abris",
+    "description": "Solution de couverture pour les grandes réceptions et événements en plein air.",
+    "options": [
+      {
+        "label": "Standard",
+        "price": 10000
+      }
+    ],
+    "unit": "m²",
+    "fromPrice": false,
+    "page": 4,
+    "note": "Également mentionnés : tapis, climatiseur et ventilateur, tarifs sur demande."
+  },
+  {
+    "id": 2,
+    "reference": "RE-002",
+    "title": "Garden simple",
+    "category": "Structures & abris",
+    "description": "Structure blanche à toiture pointue, pour accueillir vos invités.",
+    "options": [
+      {
+        "label": "Garden simple",
+        "price": 50000
+      },
+      {
+        "label": "Avec plancher et moquette",
+        "price": 80000
+      }
+    ],
+    "unit": "unité",
+    "fromPrice": false,
+    "page": 5,
+    "note": ""
+  },
+  {
+    "id": 3,
+    "reference": "RE-003",
+    "title": "Garden transparent",
+    "category": "Structures & abris",
+    "description": "Toiture transparente pour une scénographie ouverte et lumineuse.",
+    "options": [
+      {
+        "label": "Version transparente",
+        "price": 70000
+      },
+      {
+        "label": "Avec plancher et moquette",
+        "price": 90000
+      }
+    ],
+    "unit": "unité",
+    "fromPrice": false,
+    "page": 6,
+    "note": ""
+  },
+  {
+    "id": 4,
+    "reference": "RE-004",
+    "title": "Bâche ordinaire",
+    "category": "Structures & abris",
+    "description": "Abri de réception à toiture blanche, en deux formats indiqués.",
+    "options": [
+      {
+        "label": "5 m × 3 m",
+        "price": 10000
+      },
+      {
+        "label": "8 m × 6 m",
+        "price": 15000
+      }
+    ],
+    "unit": "unité",
+    "fromPrice": false,
+    "page": 4,
+    "note": ""
+  },
+  {
+    "id": 5,
+    "reference": "RE-005",
+    "title": "Chapiteau local",
+    "category": "Structures & abris",
+    "description": "Chapiteau blanc polyvalent pour une réception extérieure.",
+    "options": [
+      {
+        "label": "Standard",
+        "price": 15000
+      }
+    ],
+    "unit": "unité",
+    "fromPrice": false,
+    "page": 5,
+    "note": ""
+  },
+  {
+    "id": 6,
+    "reference": "RE-006",
+    "title": "Chaise Malaga",
+    "category": "Chaises & assises",
+    "description": "Assise blanche empilable, sobre et facile à intégrer à une réception.",
+    "options": [
+      {
+        "label": "Standard",
+        "price": 100
+      }
+    ],
+    "unit": "unité",
+    "fromPrice": false,
+    "page": 7,
+    "note": ""
+  },
+  {
+    "id": 7,
+    "reference": "RE-007",
+    "title": "Chaise présidentielle",
+    "category": "Chaises & assises",
+    "description": "Assise rouge avec structure dorée, à l’allure cérémonielle.",
+    "options": [
+      {
+        "label": "Standard",
+        "price": 1000
+      }
+    ],
+    "unit": "unité",
+    "fromPrice": false,
+    "page": 8,
+    "note": ""
+  },
+  {
+    "id": 8,
+    "reference": "RE-008",
+    "title": "Chaise Hirondelle",
+    "category": "Chaises & assises",
+    "description": "Chaise blanche aux lignes contemporaines pour la salle ou l’extérieur.",
+    "options": [
+      {
+        "label": "Standard",
+        "price": 500
+      }
+    ],
+    "unit": "unité",
+    "fromPrice": false,
+    "page": 7,
+    "note": ""
+  },
+  {
+    "id": 9,
+    "reference": "RE-009",
+    "title": "Chaise champêtre",
+    "category": "Chaises & assises",
+    "description": "Assise à dossier cannage et finition bois clair pour une ambiance naturelle.",
+    "options": [
+      {
+        "label": "Standard",
+        "price": 2500
+      }
+    ],
+    "unit": "unité",
+    "fromPrice": false,
+    "page": 10,
+    "note": ""
+  },
+  {
+    "id": 10,
+    "reference": "RE-010",
+    "title": "Chaise Chiavari noire",
+    "category": "Chaises & assises",
+    "description": "Silhouette médaillon noire, idéale pour créer un contraste élégant.",
+    "options": [
+      {
+        "label": "Standard",
+        "price": 1500
+      }
+    ],
+    "unit": "unité",
+    "fromPrice": false,
+    "page": 9,
+    "note": ""
+  },
+  {
+    "id": 11,
+    "reference": "RE-011",
+    "title": "Chaise Chiavari dorée",
+    "category": "Chaises & assises",
+    "description": "Assise au dossier rond et à la finition dorée.",
+    "options": [
+      {
+        "label": "Standard",
+        "price": 1000
+      }
+    ],
+    "unit": "unité",
+    "fromPrice": false,
+    "page": 8,
+    "note": ""
+  },
+  {
+    "id": 12,
+    "reference": "RE-012",
+    "title": "Chaise Chiavari blanche",
+    "category": "Chaises & assises",
+    "description": "Dossier ajouré et finition blanche, pour une mise en scène raffinée.",
+    "options": [
+      {
+        "label": "Standard",
+        "price": 1000
+      }
+    ],
+    "unit": "unité",
+    "fromPrice": false,
+    "page": 9,
+    "note": ""
+  },
+  {
+    "id": 13,
+    "reference": "RE-013",
+    "title": "Table d’honneur — or sculpté",
+    "category": "Tables d’honneur",
+    "description": "Table à effets dorés et plateau décoratif pour une mise en scène centrale.",
+    "options": [
+      {
+        "label": "Sur devis",
+        "price": null
+      }
+    ],
+    "unit": "unité",
+    "fromPrice": false,
+    "page": 13,
+    "note": ""
+  },
+  {
+    "id": 14,
+    "reference": "RE-014",
+    "title": "Table d’honneur — miroir argent",
+    "category": "Tables d’honneur",
+    "description": "Plateau réfléchissant et lignes géométriques dans un décor floral.",
+    "options": [
+      {
+        "label": "Sur devis",
+        "price": null
+      }
+    ],
+    "unit": "unité",
+    "fromPrice": false,
+    "page": 13,
+    "note": ""
+  },
+  {
+    "id": 15,
+    "reference": "RE-015",
+    "title": "Table ronde — pied conique",
+    "category": "Tables d’honneur",
+    "description": "Plateau rond sombre sur pied métallisé à la silhouette contemporaine.",
+    "options": [
+      {
+        "label": "Sur devis",
+        "price": null
+      }
+    ],
+    "unit": "unité",
+    "fromPrice": false,
+    "page": 14,
+    "note": ""
+  },
+  {
+    "id": 16,
+    "reference": "RE-016",
+    "title": "Table d’honneur — croisillons",
+    "category": "Tables d’honneur",
+    "description": "Table miroir et piètement croisé, avec détails brillants.",
+    "options": [
+      {
+        "label": "Sur devis",
+        "price": null
+      }
+    ],
+    "unit": "unité",
+    "fromPrice": false,
+    "page": 14,
+    "note": ""
+  },
+  {
+    "id": 17,
+    "reference": "RE-017",
+    "title": "Table ronde — piètement doré",
+    "category": "Tables d’honneur",
+    "description": "Table sculpturale à plateau sombre et structure dorée.",
+    "options": [
+      {
+        "label": "Sur devis",
+        "price": null
+      }
+    ],
+    "unit": "unité",
+    "fromPrice": false,
+    "page": 15,
+    "note": ""
+  },
+  {
+    "id": 18,
+    "reference": "RE-018",
+    "title": "Tables et présentoirs à gâteaux",
+    "category": "Tables d’honneur",
+    "description": "Sélection de tables et supports de présentation pour l’espace dessert.",
+    "options": [
+      {
+        "label": "Sur devis",
+        "price": null
+      }
+    ],
+    "unit": "unité",
+    "fromPrice": false,
+    "page": 15,
+    "note": ""
+  },
+  {
+    "id": 19,
+    "reference": "RE-019",
+    "title": "Trône impérial doré",
+    "category": "Chaises des mariés",
+    "description": "Fauteuil d’apparat blanc et or, pièce centrale d’une cérémonie.",
+    "options": [
+      {
+        "label": "Sur devis",
+        "price": null
+      }
+    ],
+    "unit": "unité",
+    "fromPrice": false,
+    "page": 16,
+    "note": ""
+  },
+  {
+    "id": 20,
+    "reference": "RE-020",
+    "title": "Duo royal argenté",
+    "category": "Chaises des mariés",
+    "description": "Deux fauteuils capitonnés à décor argenté pour les mariés.",
+    "options": [
+      {
+        "label": "Sur devis",
+        "price": null
+      }
+    ],
+    "unit": "unité",
+    "fromPrice": false,
+    "page": 16,
+    "note": ""
+  },
+  {
+    "id": 21,
+    "reference": "RE-021",
+    "title": "Duo classique doré",
+    "category": "Chaises des mariés",
+    "description": "Paire de sièges décoratifs or et blanc au dessin traditionnel.",
+    "options": [
+      {
+        "label": "Sur devis",
+        "price": null
+      }
+    ],
+    "unit": "unité",
+    "fromPrice": false,
+    "page": 17,
+    "note": ""
+  },
+  {
+    "id": 22,
+    "reference": "RE-022",
+    "title": "Fauteuil couronne — or",
+    "category": "Chaises des mariés",
+    "description": "Fauteuil blanc capitonné et encadrement doré.",
+    "options": [
+      {
+        "label": "Sur devis",
+        "price": null
+      }
+    ],
+    "unit": "unité",
+    "fromPrice": false,
+    "page": 17,
+    "note": ""
+  },
+  {
+    "id": 23,
+    "reference": "RE-023",
+    "title": "Fauteuil couronne — argent",
+    "category": "Chaises des mariés",
+    "description": "Fauteuil blanc capitonné et encadrement argenté.",
+    "options": [
+      {
+        "label": "Sur devis",
+        "price": null
+      }
+    ],
+    "unit": "unité",
+    "fromPrice": false,
+    "page": 18,
+    "note": ""
+  },
+  {
+    "id": 24,
+    "reference": "RE-024",
+    "title": "Fauteuil capitonné blanc",
+    "category": "Chaises des mariés",
+    "description": "Fauteuil de cérémonie blanc, au dossier haut.",
+    "options": [
+      {
+        "label": "Sur devis",
+        "price": null
+      }
+    ],
+    "unit": "unité",
+    "fromPrice": false,
+    "page": 18,
+    "note": ""
+  },
+  {
+    "id": 25,
+    "reference": "RE-025",
+    "title": "Fauteuil médaillon doré",
+    "category": "Chaises des mariés",
+    "description": "Assise blanche ovale avec encadrement doré.",
+    "options": [
+      {
+        "label": "Sur devis",
+        "price": null
+      }
+    ],
+    "unit": "unité",
+    "fromPrice": false,
+    "page": 19,
+    "note": ""
+  },
+  {
+    "id": 26,
+    "reference": "RE-026",
+    "title": "Chaises à dossier floral",
+    "category": "Chaises des mariés",
+    "description": "Paire de chaises blanches aux dossiers évoquant des pétales.",
+    "options": [
+      {
+        "label": "Sur devis",
+        "price": null
+      }
+    ],
+    "unit": "unité",
+    "fromPrice": false,
+    "page": 19,
+    "note": ""
+  },
+  {
+    "id": 27,
+    "reference": "RE-027",
+    "title": "Table importée",
+    "category": "Tables & mobilier",
+    "description": "Table de réception ronde pliante, présentée avec ses configurations.",
+    "options": [
+      {
+        "label": "Standard",
+        "price": 2000
+      }
+    ],
+    "unit": "unité",
+    "fromPrice": false,
+    "page": 11,
+    "note": ""
+  },
+  {
+    "id": 28,
+    "reference": "RE-028",
+    "title": "Table locale",
+    "category": "Tables & mobilier",
+    "description": "Tables de réception à finition bois pour différentes compositions.",
+    "options": [
+      {
+        "label": "Standard",
+        "price": 1500
+      }
+    ],
+    "unit": "unité",
+    "fromPrice": false,
+    "page": 11,
+    "note": ""
+  },
+  {
+    "id": 29,
+    "reference": "RE-029",
+    "title": "Vaisselle blanche classique",
+    "category": "Arts de la table",
+    "description": "Assiettes et éléments de service blancs pour une présentation intemporelle.",
+    "options": [
+      {
+        "label": "Standard",
+        "price": 100
+      }
+    ],
+    "unit": "unité",
+    "fromPrice": false,
+    "page": 20,
+    "note": ""
+  },
+  {
+    "id": 30,
+    "reference": "RE-030",
+    "title": "Assiettes carrées dorées",
+    "category": "Arts de la table",
+    "description": "Plateaux de présentation carrés à bordure dorée.",
+    "options": [
+      {
+        "label": "Standard",
+        "price": 500
+      }
+    ],
+    "unit": "unité",
+    "fromPrice": false,
+    "page": 22,
+    "note": ""
+  },
+  {
+    "id": 31,
+    "reference": "RE-031",
+    "title": "Assiettes rondes argentées",
+    "category": "Arts de la table",
+    "description": "Pièces de présentation rondes à finition argentée.",
+    "options": [
+      {
+        "label": "Standard",
+        "price": 500
+      }
+    ],
+    "unit": "unité",
+    "fromPrice": false,
+    "page": 23,
+    "note": ""
+  },
+  {
+    "id": 32,
+    "reference": "RE-032",
+    "title": "Sous-assiettes décoratives",
+    "category": "Arts de la table",
+    "description": "Plateaux décoratifs dorés et modèles à motifs pour dresser la table.",
+    "options": [
+      {
+        "label": "Standard",
+        "price": 300
+      }
+    ],
+    "unit": "unité",
+    "fromPrice": false,
+    "page": 21,
+    "note": ""
+  },
+  {
+    "id": 33,
+    "reference": "RE-033",
+    "title": "Tasses blanches et soucoupes",
+    "category": "Arts de la table",
+    "description": "Ensemble blanc élégant pour le service des boissons chaudes.",
+    "options": [
+      {
+        "label": "Standard",
+        "price": 500
+      }
+    ],
+    "unit": "unité",
+    "fromPrice": false,
+    "page": 23,
+    "note": ""
+  },
+  {
+    "id": 34,
+    "reference": "RE-034",
+    "title": "Mugs blancs texturés",
+    "category": "Arts de la table",
+    "description": "Tasses hautes au relief discret et aux tonalités neutres.",
+    "options": [
+      {
+        "label": "Standard",
+        "price": 300
+      }
+    ],
+    "unit": "unité",
+    "fromPrice": false,
+    "page": 21,
+    "note": ""
+  },
+  {
+    "id": 35,
+    "reference": "RE-035",
+    "title": "Verres VIP — pied doré",
+    "category": "Arts de la table",
+    "description": "Verrerie transparente sur pieds dorés, finition habillée.",
+    "options": [
+      {
+        "label": "Standard",
+        "price": 500
+      }
+    ],
+    "unit": "unité",
+    "fromPrice": false,
+    "page": 24,
+    "note": ""
+  },
+  {
+    "id": 36,
+    "reference": "RE-036",
+    "title": "Verres VIP — transparents",
+    "category": "Arts de la table",
+    "description": "Verrerie élancée aux reliefs élégants.",
+    "options": [
+      {
+        "label": "Standard",
+        "price": 500
+      }
+    ],
+    "unit": "unité",
+    "fromPrice": false,
+    "page": 24,
+    "note": ""
+  },
+  {
+    "id": 37,
+    "reference": "RE-037",
+    "title": "Couverts argentés",
+    "category": "Arts de la table",
+    "description": "Sélection de couverts de table à finition argentée.",
+    "options": [
+      {
+        "label": "Standard",
+        "price": 100
+      }
+    ],
+    "unit": "unité",
+    "fromPrice": false,
+    "page": 20,
+    "note": ""
+  },
+  {
+    "id": 38,
+    "reference": "RE-038",
+    "title": "Couverts dorés",
+    "category": "Arts de la table",
+    "description": "Ensemble de couverts à finition dorée pour une table raffinée.",
+    "options": [
+      {
+        "label": "Standard",
+        "price": 300
+      }
+    ],
+    "unit": "unité",
+    "fromPrice": false,
+    "page": 22,
+    "note": ""
+  },
+  {
+    "id": 39,
+    "reference": "RE-039",
+    "title": "Verres VIP — dorés",
+    "category": "Arts de la table",
+    "description": "Verres et flûtes à effet doré miroir pour le service des boissons.",
+    "options": [
+      {
+        "label": "Standard",
+        "price": 500
+      }
+    ],
+    "unit": "unité",
+    "fromPrice": false,
+    "page": 25,
+    "note": ""
+  },
+  {
+    "id": 40,
+    "reference": "RE-040",
+    "title": "Thermos de service",
+    "category": "Buffet & service",
+    "description": "Plusieurs formats de thermos pour les boissons de réception.",
+    "options": [
+      {
+        "label": "Selon le modèle",
+        "price": 1000
+      },
+      {
+        "label": "Selon le modèle",
+        "price": 2000
+      },
+      {
+        "label": "Selon le modèle",
+        "price": 5000
+      }
+    ],
+    "unit": "unité",
+    "fromPrice": false,
+    "page": 27,
+    "note": ""
+  },
+  {
+    "id": 41,
+    "reference": "RE-041",
+    "title": "Chafing dish VIP",
+    "category": "Buffet & service",
+    "description": "Équipement de buffet à finition dorée ou argentée.",
+    "options": [
+      {
+        "label": "Standard",
+        "price": 15000
+      }
+    ],
+    "unit": "unité",
+    "fromPrice": false,
+    "page": 29,
+    "note": ""
+  },
+  {
+    "id": 42,
+    "reference": "RE-042",
+    "title": "Chafing dish standard",
+    "category": "Buffet & service",
+    "description": "Plats chauffants pour le maintien et la présentation des préparations.",
+    "options": [
+      {
+        "label": "Modèle 1",
+        "price": 5000
+      },
+      {
+        "label": "Modèle 2",
+        "price": 8000
+      }
+    ],
+    "unit": "unité",
+    "fromPrice": false,
+    "page": 28,
+    "note": ""
+  },
+  {
+    "id": 43,
+    "reference": "RE-043",
+    "title": "Seaux à champagne sur pied",
+    "category": "Bar & rafraîchissement",
+    "description": "Présentoirs à seau pour un espace réception ou boissons.",
+    "options": [
+      {
+        "label": "Standard",
+        "price": 5000
+      }
+    ],
+    "unit": "unité",
+    "fromPrice": false,
+    "page": 32,
+    "note": ""
+  },
+  {
+    "id": 44,
+    "reference": "RE-044",
+    "title": "Bassine à champagne",
+    "category": "Bar & rafraîchissement",
+    "description": "Vasque de réception à finition métallisée pour bouteilles et glace.",
+    "options": [
+      {
+        "label": "Standard",
+        "price": 5000
+      }
+    ],
+    "unit": "unité",
+    "fromPrice": false,
+    "page": 32,
+    "note": ""
+  },
+  {
+    "id": 45,
+    "reference": "RE-045",
+    "title": "Seaux à champagne",
+    "category": "Bar & rafraîchissement",
+    "description": "Seaux métallisés en différents formats et finitions.",
+    "options": [
+      {
+        "label": "Petit modèle",
+        "price": 1000
+      },
+      {
+        "label": "Autre modèle",
+        "price": 2000
+      }
+    ],
+    "unit": "unité",
+    "fromPrice": false,
+    "page": 31,
+    "note": ""
+  },
+  {
+    "id": 46,
+    "reference": "RE-046",
+    "title": "Pinces à glace",
+    "category": "Bar & rafraîchissement",
+    "description": "Pinces de service pour la manipulation et le dressage des glaçons.",
+    "options": [
+      {
+        "label": "Standard",
+        "price": 300
+      }
+    ],
+    "unit": "unité",
+    "fromPrice": false,
+    "page": 30,
+    "note": ""
+  },
+  {
+    "id": 47,
+    "reference": "RE-047",
+    "title": "Seau à glace",
+    "category": "Bar & rafraîchissement",
+    "description": "Seaux argentés de service disponibles en différents formats.",
+    "options": [
+      {
+        "label": "Standard",
+        "price": 500
+      }
+    ],
+    "unit": "unité",
+    "fromPrice": false,
+    "page": 30,
+    "note": ""
+  },
+  {
+    "id": 48,
+    "reference": "RE-048",
+    "title": "Glacières de service",
+    "category": "Bar & rafraîchissement",
+    "description": "Formats variés de glacières illustrés avec tarifs par modèle.",
+    "options": [
+      {
+        "label": "Modèle 1",
+        "price": 1000
+      },
+      {
+        "label": "Modèle 2",
+        "price": 2000
+      },
+      {
+        "label": "Modèle 3",
+        "price": 3000
+      },
+      {
+        "label": "Modèle 4",
+        "price": 4000
+      },
+      {
+        "label": "Modèle 5",
+        "price": 5000
+      }
+    ],
+    "unit": "unité",
+    "fromPrice": false,
+    "page": 31,
+    "note": ""
+  },
+  {
+    "id": 49,
+    "reference": "RE-049",
+    "title": "Plateaux de service",
+    "category": "Buffet & service",
+    "description": "Plateaux métallisés en plusieurs formats pour buffet et service.",
+    "options": [
+      {
+        "label": "Modèle 1",
+        "price": 1000
+      },
+      {
+        "label": "Modèle 2",
+        "price": 1500
+      },
+      {
+        "label": "Modèle 3",
+        "price": 2000
+      },
+      {
+        "label": "Modèle 4",
+        "price": 3000
+      }
+    ],
+    "unit": "unité",
+    "fromPrice": false,
+    "page": 27,
+    "note": ""
+  },
+  {
+    "id": 50,
+    "reference": "RE-050",
+    "title": "Ustensiles de service argentés",
+    "category": "Buffet & service",
+    "description": "Louches, écumoires et accessoires métallisés pour le buffet.",
+    "options": [
+      {
+        "label": "Standard",
+        "price": 500
+      }
+    ],
+    "unit": "unité",
+    "fromPrice": false,
+    "page": 26,
+    "note": ""
+  },
+  {
+    "id": 51,
+    "reference": "RE-051",
+    "title": "Ustensiles de service dorés",
+    "category": "Buffet & service",
+    "description": "Accessoires de service dorés pour une table coordonnée.",
+    "options": [
+      {
+        "label": "Standard",
+        "price": 1000
+      }
+    ],
+    "unit": "unité",
+    "fromPrice": false,
+    "page": 26,
+    "note": ""
+  },
+  {
+    "id": 52,
+    "reference": "RE-052",
+    "title": "Ventilateur simple",
+    "category": "Confort & enfants",
+    "description": "Ventilation mobile sur pied pour les espaces de réception.",
+    "options": [
+      {
+        "label": "Standard",
+        "price": 10000
+      }
+    ],
+    "unit": "unité",
+    "fromPrice": false,
+    "page": 37,
+    "note": ""
+  },
+  {
+    "id": 53,
+    "reference": "RE-053",
+    "title": "Ventilateur à vapeur",
+    "category": "Confort & enfants",
+    "description": "Modèle de ventilation à brumisation pour les espaces événementiels.",
+    "options": [
+      {
+        "label": "Standard",
+        "price": 20000
+      }
+    ],
+    "unit": "unité",
+    "fromPrice": false,
+    "page": 38,
+    "note": ""
+  },
+  {
+    "id": 54,
+    "reference": "RE-054",
+    "title": "Barrière présidentielle",
+    "category": "Décoration & textiles",
+    "description": "Potelets et cordons de délimitation pour une entrée de prestige.",
+    "options": [
+      {
+        "label": "Standard",
+        "price": 10000
+      }
+    ],
+    "unit": "unité",
+    "fromPrice": false,
+    "page": 36,
+    "note": ""
+  },
+  {
+    "id": 55,
+    "reference": "RE-055",
+    "title": "Mange-debout",
+    "category": "Tables & mobilier",
+    "description": "Table haute pour cocktail, réception ou espace d’accueil.",
+    "options": [
+      {
+        "label": "Standard",
+        "price": 10000
+      }
+    ],
+    "unit": "unité",
+    "fromPrice": false,
+    "page": 12,
+    "note": ""
+  },
+  {
+    "id": 56,
+    "reference": "RE-056",
+    "title": "Brouette à boissons",
+    "category": "Bar & rafraîchissement",
+    "description": "Présentoir rafraîchissant original pour bouteilles et glaçons.",
+    "options": [
+      {
+        "label": "Standard",
+        "price": 10000
+      }
+    ],
+    "unit": "unité",
+    "fromPrice": false,
+    "page": 33,
+    "note": ""
+  },
+  {
+    "id": 57,
+    "reference": "RE-057",
+    "title": "Tapis rouge",
+    "category": "Décoration & textiles",
+    "description": "Parcours de réception pour cérémonie et entrée solennelle.",
+    "options": [
+      {
+        "label": "Standard",
+        "price": 2000
+      }
+    ],
+    "unit": "m",
+    "fromPrice": false,
+    "page": 35,
+    "note": ""
+  },
+  {
+    "id": 58,
+    "reference": "RE-058",
+    "title": "Présentoir à mignardises",
+    "category": "Buffet & service",
+    "description": "Supports étagés pour pâtisseries, desserts et amuse-bouches.",
+    "options": [
+      {
+        "label": "Standard",
+        "price": 5000
+      }
+    ],
+    "unit": "unité",
+    "fromPrice": false,
+    "page": 28,
+    "note": ""
+  },
+  {
+    "id": 59,
+    "reference": "RE-059",
+    "title": "Lampes de table décoratives",
+    "category": "Décoration & textiles",
+    "description": "Petits luminaires d’ambiance de différentes couleurs.",
+    "options": [
+      {
+        "label": "Standard",
+        "price": 1000
+      }
+    ],
+    "unit": "unité",
+    "fromPrice": false,
+    "page": 35,
+    "note": ""
+  },
+  {
+    "id": 60,
+    "reference": "RE-060",
+    "title": "Mobilier pour enfants",
+    "category": "Confort & enfants",
+    "description": "Ensemble coloré de petites chaises et tables pour espace enfants.",
+    "options": [
+      {
+        "label": "Chaise",
+        "price": 500
+      },
+      {
+        "label": "Table",
+        "price": 500
+      }
+    ],
+    "unit": "unité",
+    "fromPrice": false,
+    "page": 37,
+    "note": ""
+  },
+  {
+    "id": 61,
+    "reference": "RE-061",
+    "title": "Nappes de table",
+    "category": "Décoration & textiles",
+    "description": "Habillage textile pour tables de réception, en plusieurs couleurs.",
+    "options": [
+      {
+        "label": "Standard",
+        "price": 2000
+      }
+    ],
+    "unit": "unité",
+    "fromPrice": false,
+    "page": 36,
+    "note": ""
+  },
+  {
+    "id": 62,
+    "reference": "RE-062",
+    "title": "Serviettes de table",
+    "category": "Décoration & textiles",
+    "description": "Serviettes colorées pour personnaliser le dressage.",
+    "options": [
+      {
+        "label": "Standard",
+        "price": 300
+      }
+    ],
+    "unit": "unité",
+    "fromPrice": false,
+    "page": 34,
+    "note": ""
+  },
+  {
+    "id": 63,
+    "reference": "RE-063",
+    "title": "Housses de chaises",
+    "category": "Décoration & textiles",
+    "description": "Housses blanches pour uniformiser les assises et la décoration.",
+    "options": [
+      {
+        "label": "Standard",
+        "price": 300
+      }
+    ],
+    "unit": "unité",
+    "fromPrice": false,
+    "page": 34,
+    "note": ""
+  },
+  {
+    "id": 64,
+    "reference": "RE-064",
+    "title": "Location de sonorisation",
+    "category": "Sonorisation",
+    "description": "Sonorisation pour mariage, séminaire, colloque ou anniversaire.",
+    "options": [
+      {
+        "label": "Standard",
+        "price": 50000
+      }
+    ],
+    "unit": "unité",
+    "fromPrice": true,
+    "page": 39,
+    "note": ""
+  }
+]

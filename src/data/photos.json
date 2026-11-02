@@ -1,0 +1,450 @@
+[
+  {
+    "id": 1,
+    "title": "Chapiteau au m²",
+    "category": "Structures & abris",
+    "reference": "RE-001",
+    "page": 4
+  },
+  {
+    "id": 2,
+    "title": "Garden simple",
+    "category": "Structures & abris",
+    "reference": "RE-002",
+    "page": 5
+  },
+  {
+    "id": 3,
+    "title": "Garden transparent",
+    "category": "Structures & abris",
+    "reference": "RE-003",
+    "page": 6
+  },
+  {
+    "id": 4,
+    "title": "Bâche ordinaire",
+    "category": "Structures & abris",
+    "reference": "RE-004",
+    "page": 4
+  },
+  {
+    "id": 5,
+    "title": "Chapiteau local",
+    "category": "Structures & abris",
+    "reference": "RE-005",
+    "page": 5
+  },
+  {
+    "id": 6,
+    "title": "Chaise Malaga",
+    "category": "Chaises & assises",
+    "reference": "RE-006",
+    "page": 7
+  },
+  {
+    "id": 7,
+    "title": "Chaise présidentielle",
+    "category": "Chaises & assises",
+    "reference": "RE-007",
+    "page": 8
+  },
+  {
+    "id": 8,
+    "title": "Chaise Hirondelle",
+    "category": "Chaises & assises",
+    "reference": "RE-008",
+    "page": 7
+  },
+  {
+    "id": 9,
+    "title": "Chaise champêtre",
+    "category": "Chaises & assises",
+    "reference": "RE-009",
+    "page": 10
+  },
+  {
+    "id": 10,
+    "title": "Chaise Chiavari noire",
+    "category": "Chaises & assises",
+    "reference": "RE-010",
+    "page": 9
+  },
+  {
+    "id": 11,
+    "title": "Chaise Chiavari dorée",
+    "category": "Chaises & assises",
+    "reference": "RE-011",
+    "page": 8
+  },
+  {
+    "id": 12,
+    "title": "Chaise Chiavari blanche",
+    "category": "Chaises & assises",
+    "reference": "RE-012",
+    "page": 9
+  },
+  {
+    "id": 13,
+    "title": "Table d’honneur — or sculpté",
+    "category": "Tables d’honneur",
+    "reference": "RE-013",
+    "page": 13
+  },
+  {
+    "id": 14,
+    "title": "Table d’honneur — miroir argent",
+    "category": "Tables d’honneur",
+    "reference": "RE-014",
+    "page": 13
+  },
+  {
+    "id": 15,
+    "title": "Table ronde — pied conique",
+    "category": "Tables d’honneur",
+    "reference": "RE-015",
+    "page": 14
+  },
+  {
+    "id": 16,
+    "title": "Table d’honneur — croisillons",
+    "category": "Tables d’honneur",
+    "reference": "RE-016",
+    "page": 14
+  },
+  {
+    "id": 17,
+    "title": "Table ronde — piètement doré",
+    "category": "Tables d’honneur",
+    "reference": "RE-017",
+    "page": 15
+  },
+  {
+    "id": 18,
+    "title": "Tables et présentoirs à gâteaux",
+    "category": "Tables d’honneur",
+    "reference": "RE-018",
+    "page": 15
+  },
+  {
+    "id": 19,
+    "title": "Trône impérial doré",
+    "category": "Chaises des mariés",
+    "reference": "RE-019",
+    "page": 16
+  },
+  {
+    "id": 20,
+    "title": "Duo royal argenté",
+    "category": "Chaises des mariés",
+    "reference": "RE-020",
+    "page": 16
+  },
+  {
+    "id": 21,
+    "title": "Duo classique doré",
+    "category": "Chaises des mariés",
+    "reference": "RE-021",
+    "page": 17
+  },
+  {
+    "id": 22,
+    "title": "Fauteuil couronne — or",
+    "category": "Chaises des mariés",
+    "reference": "RE-022",
+    "page": 17
+  },
+  {
+    "id": 23,
+    "title": "Fauteuil couronne — argent",
+    "category": "Chaises des mariés",
+    "reference": "RE-023",
+    "page": 18
+  },
+  {
+    "id": 24,
+    "title": "Fauteuil capitonné blanc",
+    "category": "Chaises des mariés",
+    "reference": "RE-024",
+    "page": 18
+  },
+  {
+    "id": 25,
+    "title": "Fauteuil médaillon doré",
+    "category": "Chaises des mariés",
+    "reference": "RE-025",
+    "page": 19
+  },
+  {
+    "id": 26,
+    "title": "Chaises à dossier floral",
+    "category": "Chaises des mariés",
+    "reference": "RE-026",
+    "page": 19
+  },
+  {
+    "id": 27,
+    "title": "Table importée",
+    "category": "Tables & mobilier",
+    "reference": "RE-027",
+    "page": 11
+  },
+  {
+    "id": 28,
+    "title": "Table locale",
+    "category": "Tables & mobilier",
+    "reference": "RE-028",
+    "page": 11
+  },
+  {
+    "id": 29,
+    "title": "Vaisselle blanche classique",
+    "category": "Arts de la table",
+    "reference": "RE-029",
+    "page": 20
+  },
+  {
+    "id": 30,
+    "title": "Assiettes carrées dorées",
+    "category": "Arts de la table",
+    "reference": "RE-030",
+    "page": 22
+  },
+  {
+    "id": 31,
+    "title": "Assiettes rondes argentées",
+    "category": "Arts de la table",
+    "reference": "RE-031",
+    "page": 23
+  },
+  {
+    "id": 32,
+    "title": "Sous-assiettes décoratives",
+    "category": "Arts de la table",
+    "reference": "RE-032",
+    "page": 21
+  },
+  {
+    "id": 33,
+    "title": "Tasses blanches et soucoupes",
+    "category": "Arts de la table",
+    "reference": "RE-033",
+    "page": 23
+  },
+  {
+    "id": 34,
+    "title": "Mugs blancs texturés",
+    "category": "Arts de la table",
+    "reference": "RE-034",
+    "page": 21
+  },
+  {
+    "id": 35,
+    "title": "Verres VIP — pied doré",
+    "category": "Arts de la table",
+    "reference": "RE-035",
+    "page": 24
+  },
+  {
+    "id": 36,
+    "title": "Verres VIP — transparents",
+    "category": "Arts de la table",
+    "reference": "RE-036",
+    "page": 24
+  },
+  {
+    "id": 37,
+    "title": "Couverts argentés",
+    "category": "Arts de la table",
+    "reference": "RE-037",
+    "page": 20
+  },
+  {
+    "id": 38,
+    "title": "Couverts dorés",
+    "category": "Arts de la table",
+    "reference": "RE-038",
+    "page": 22
+  },
+  {
+    "id": 39,
+    "title": "Verres VIP — dorés",
+    "category": "Arts de la table",
+    "reference": "RE-039",
+    "page": 25
+  },
+  {
+    "id": 40,
+    "title": "Thermos de service",
+    "category": "Buffet & service",
+    "reference": "RE-040",
+    "page": 27
+  },
+  {
+    "id": 41,
+    "title": "Chafing dish VIP",
+    "category": "Buffet & service",
+    "reference": "RE-041",
+    "page": 29
+  },
+  {
+    "id": 42,
+    "title": "Chafing dish standard",
+    "category": "Buffet & service",
+    "reference": "RE-042",
+    "page": 28
+  },
+  {
+    "id": 43,
+    "title": "Seaux à champagne sur pied",
+    "category": "Bar & rafraîchissement",
+    "reference": "RE-043",
+    "page": 32
+  },
+  {
+    "id": 44,
+    "title": "Bassine à champagne",
+    "category": "Bar & rafraîchissement",
+    "reference": "RE-044",
+    "page": 32
+  },
+  {
+    "id": 45,
+    "title": "Seaux à champagne",
+    "category": "Bar & rafraîchissement",
+    "reference": "RE-045",
+    "page": 31
+  },
+  {
+    "id": 46,
+    "title": "Pinces à glace",
+    "category": "Bar & rafraîchissement",
+    "reference": "RE-046",
+    "page": 30
+  },
+  {
+    "id": 47,
+    "title": "Seau à glace",
+    "category": "Bar & rafraîchissement",
+    "reference": "RE-047",
+    "page": 30
+  },
+  {
+    "id": 48,
+    "title": "Glacières de service",
+    "category": "Bar & rafraîchissement",
+    "reference": "RE-048",
+    "page": 31
+  },
+  {
+    "id": 49,
+    "title": "Plateaux de service",
+    "category": "Buffet & service",
+    "reference": "RE-049",
+    "page": 27
+  },
+  {
+    "id": 50,
+    "title": "Ustensiles de service argentés",
+    "category": "Buffet & service",
+    "reference": "RE-050",
+    "page": 26
+  },
+  {
+    "id": 51,
+    "title": "Ustensiles de service dorés",
+    "category": "Buffet & service",
+    "reference": "RE-051",
+    "page": 26
+  },
+  {
+    "id": 52,
+    "title": "Ventilateur simple",
+    "category": "Confort & enfants",
+    "reference": "RE-052",
+    "page": 37
+  },
+  {
+    "id": 53,
+    "title": "Ventilateur à vapeur",
+    "category": "Confort & enfants",
+    "reference": "RE-053",
+    "page": 38
+  },
+  {
+    "id": 54,
+    "title": "Barrière présidentielle",
+    "category": "Décoration & textiles",
+    "reference": "RE-054",
+    "page": 36
+  },
+  {
+    "id": 55,
+    "title": "Mange-debout",
+    "category": "Tables & mobilier",
+    "reference": "RE-055",
+    "page": 12
+  },
+  {
+    "id": 56,
+    "title": "Brouette à boissons",
+    "category": "Bar & rafraîchissement",
+    "reference": "RE-056",
+    "page": 33
+  },
+  {
+    "id": 57,
+    "title": "Tapis rouge",
+    "category": "Décoration & textiles",
+    "reference": "RE-057",
+    "page": 35
+  },
+  {
+    "id": 58,
+    "title": "Présentoir à mignardises",
+    "category": "Buffet & service",
+    "reference": "RE-058",
+    "page": 28
+  },
+  {
+    "id": 59,
+    "title": "Lampes de table décoratives",
+    "category": "Décoration & textiles",
+    "reference": "RE-059",
+    "page": 35
+  },
+  {
+    "id": 60,
+    "title": "Mobilier pour enfants",
+    "category": "Confort & enfants",
+    "reference": "RE-060",
+    "page": 37
+  },
+  {
+    "id": 61,
+    "title": "Nappes de table",
+    "category": "Décoration & textiles",
+    "reference": "RE-061",
+    "page": 36
+  },
+  {
+    "id": 62,
+    "title": "Serviettes de table",
+    "category": "Décoration & textiles",
+    "reference": "RE-062",
+    "page": 34
+  },
+  {
+    "id": 63,
+    "title": "Housses de chaises",
+    "category": "Décoration & textiles",
+    "reference": "RE-063",
+    "page": 34
+  },
+  {
+    "id": 64,
+    "title": "Location de sonorisation",
+    "category": "Sonorisation",
+    "reference": "RE-064",
+    "page": 39
+  }
+]

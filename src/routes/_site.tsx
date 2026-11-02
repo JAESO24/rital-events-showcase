@@ -2,22 +2,18 @@ import { Outlet, createFileRoute } from "@tanstack/react-router";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { WhatsAppFloat } from "@/components/WhatsAppFloat";
-import { AppToaster } from "@/components/AppToaster";
-
+import { PageMotion } from "@/components/PageMotion";
+import { SelectionProvider } from "@/components/Experience";
 export const Route = createFileRoute("/_site")({
-  component: SiteLayout,
-});
-
-function SiteLayout() {
-  return (
-    <div className="min-h-screen flex flex-col bg-background">
+  component: () => (
+    <SelectionProvider>
       <Header />
-      <main className="flex-1">
+      <PageMotion />
+      <main id="main-content">
         <Outlet />
       </main>
       <Footer />
       <WhatsAppFloat />
-      <AppToaster />
-    </div>
-  );
-}
+    </SelectionProvider>
+  ),
+});

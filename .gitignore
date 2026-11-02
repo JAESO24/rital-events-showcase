@@ -30,3 +30,10 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+.local-server.pid
+bun.lockb.original
+
+node_modules.previous/
+package-lock.original.json
+package.original.json

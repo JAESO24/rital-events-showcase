@@ -1,37 +1,28 @@
 import logo from "@/assets/logo.jpeg";
 import { Link } from "@tanstack/react-router";
-
-interface LogoProps {
+export function Logo({
+  asLink = true,
+  className = "",
+}: {
+  asLink?: boolean;
   className?: string;
   size?: "sm" | "md" | "lg";
-  asLink?: boolean;
-}
-
-export function Logo({ className = "", size = "md", asLink = true }: LogoProps) {
-  const sizeClasses = {
-    sm: "h-10",
-    md: "h-12",
-    lg: "h-16",
-  };
-
+}) {
   const content = (
-    <div className={`flex items-center gap-3 ${className}`}>
-      <img
-        src={logo}
-        alt="Rital Events"
-        className={`${sizeClasses[size]} w-auto object-contain`}
-        width={120}
-        height={80}
-      />
-    </div>
+    <>
+      <img src={logo} alt="Rital Events" width="86" height="64" />
+      <span className="brand-text">
+        L’art de recevoir
+        <br />
+        Abidjan · Côte d’Ivoire
+      </span>
+    </>
   );
-
-  if (asLink) {
-    return (
-      <Link to="/" className="transition-smooth hover:opacity-90">
-        {content}
-      </Link>
-    );
-  }
-  return content;
+  return asLink ? (
+    <Link to="/" className={"brand " + className} aria-label="Rital Events — Accueil">
+      {content}
+    </Link>
+  ) : (
+    <div className={"brand " + className}>{content}</div>
+  );
 }
